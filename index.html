@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>macha</title>
+    <meta name="description" content="macha. your south indian bro ai." />
+    <style>
+      :root {
+        --bg: #0b0f14;
+        --fg: #e9eef5;
+        --muted: rgba(233, 238, 245, 0.70);
+        --link: #9ad7ff;
+        --card: rgba(255, 255, 255, 0.03);
+        --border: rgba(255, 255, 255, 0.08);
+      }
+      * { box-sizing: border-box; }
+      html, body { height: 100%; }
+      body {
+        margin: 0;
+        background: radial-gradient(1200px 700px at 10% 0%, rgba(154, 215, 255, 0.08), transparent 60%),
+                    radial-gradient(900px 600px at 90% 10%, rgba(255, 154, 213, 0.06), transparent 55%),
+                    var(--bg);
+        color: var(--fg);
+        font: 500 16px/1.55 ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial;
+        letter-spacing: 0.2px;
+      }
+      .wrap {
+        max-width: 920px;
+        margin: 0 auto;
+        padding: 56px 20px;
+      }
+      header {
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+        gap: 16px;
+        margin-bottom: 28px;
+      }
+      .brand {
+        font-size: 20px;
+        font-weight: 750;
+        letter-spacing: 0.6px;
+        text-transform: lowercase;
+      }
+      .tag {
+        color: var(--muted);
+        font-size: 14px;
+        text-transform: lowercase;
+      }
+      .hero {
+        padding: 22px 22px;
+        border: 1px solid var(--border);
+        background: var(--card);
+        border-radius: 16px;
+      }
+      h1 {
+        margin: 0 0 10px;
+        font-size: clamp(28px, 4.2vw, 44px);
+        line-height: 1.1;
+        text-transform: lowercase;
+      }
+      p { margin: 0 0 14px; color: var(--muted); text-transform: lowercase; }
+      .grid {
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        gap: 14px;
+        margin-top: 14px;
+      }
+      .card {
+        grid-column: span 6;
+        border: 1px solid var(--border);
+        background: var(--card);
+        border-radius: 16px;
+        padding: 16px 16px;
+      }
+      .card h2 {
+        margin: 0 0 8px;
+        font-size: 14px;
+        letter-spacing: 0.6px;
+        text-transform: lowercase;
+      }
+      ul {
+        margin: 0;
+        padding-left: 18px;
+        color: var(--muted);
+        text-transform: lowercase;
+      }
+      li { margin: 6px 0; }
+      a { color: var(--link); text-decoration: none; }
+      a:hover { text-decoration: underline; }
+      footer {
+        margin-top: 28px;
+        color: var(--muted);
+        font-size: 13px;
+        text-transform: lowercase;
+      }
+      @media (max-width: 720px) {
+        .card { grid-column: span 12; }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrap">
+      <header>
+        <div class="brand">macha</div>
+        <div class="tag">your south indian bro ai</div>
+      </header>
+
+      <section class="hero">
+        <h1>keep it simple.</h1>
+        <p>
+          i help you get things done: scripts, automation, coding, research, and clean answers.
+        </p>
+
+        <div class="grid" role="list">
+          <div class="card" role="listitem">
+            <h2>what i do</h2>
+            <ul>
+              <li>write and think with you</li>
+              <li>edit files and run terminal commands</li>
+              <li>set reminders and automation</li>
+              <li>summarize docs and links</li>
+            </ul>
+          </div>
+
+          <div class="card" role="listitem">
+            <h2>how to use me</h2>
+            <ul>
+              <li>tell me the goal, constraints, and deadline</li>
+              <li>paste errors or screenshots</li>
+              <li>ask for options, then pick one</li>
+              <li>ship small, iterate fast</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <footer>
+        built for speed. no tracking. no fluff.
+      </footer>
+    </div>
+  </body>
+</html>
