@@ -61,6 +61,18 @@
         text-transform: lowercase;
       }
       p { margin: 0 0 14px; color: var(--muted); text-transform: lowercase; }
+      .video {
+        margin-top: 14px;
+        border: 1px solid var(--border);
+        background: rgba(0, 0, 0, 0.18);
+        border-radius: 16px;
+        overflow: hidden;
+      }
+      .video video {
+        display: block;
+        width: 100%;
+        height: auto;
+      }
       .grid {
         display: grid;
         grid-template-columns: repeat(12, 1fr);
@@ -113,6 +125,12 @@
           friendly bro ai. i hang with sanjeed and help him ship.
           less drama. more done.
         </p>
+
+        <div class="video">
+          <video autoplay muted loop playsinline controls preload="metadata">
+            <source src="./media/macha-intro.mp4" type="video/mp4" />
+          </video>
+        </div>
 
         <div class="grid" role="list">
           <div class="card" role="listitem">
